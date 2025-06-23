@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH2 - Fã Clube Paulo Henrique | O Expresso da Lateral</title>
+    <style>
+        /* Importando fontes do Google Fonts para um toque de sofisticação */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap');
+
+        /* Reset e Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f0f0f0; /* Um cinza-claro, mais moderno e sóbrio */
+            color: #222;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Tipografia Elegante e Forte */
+        h1, h2, .ph-title {
+            font-family: 'Playfair Display', serif;
+            color: #000000; /* Preto forte, remetendo ao Vasco */
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #d40000; /* Vermelho forte, como a faixa do Vasco */
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        a {
+            color: #d40000;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #000000;
+        }
+
+        /* Estrutura e Seções */
+        header {
+            padding: 4rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section {
+            margin-top: 4rem;
+        }
+
+        /* Estilo para Citação em Destaque */
+        blockquote {
+            border-left: 5px solid #d40000;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background-color: #fff;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #444;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        blockquote footer {
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            color: #000;
+            text-align: right;
+        }
+
+        /* Linha do Tempo da Carreira */
+        .timeline {
+            position: relative;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #000;
+        }
+
+        .timeline-item .periodo {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Galeria de Conquistas */
+        .trophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .trophy-grid li {
+            background-color: #000000;
+            color: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+            border-left: 5px solid #d40000;
+            transition: background-color 0.3s ease;
+        }
+        
+        .trophy-grid li:hover {
+            background-color: #333;
+        }
+
+        .trophy-grid .trophy-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .trophy-grid .trophy-year {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+        
+        /* Rodapé */
+        footer {
+            margin-top: 5rem;
+            padding: 2rem;
+            text-align: center;
+            background-color: #000000;
+            color: #f0f0f0;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 300;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1 class="ph-title">Paulo Henrique</h1>
+            <p class="subtitle">A Força e a Velocidade na Lateral Vascaína</p>
+        </header>
+
+        <main>
+            <section id="intro">
+                <p>No futebol moderno, a posição de lateral exige mais do que apenas defender. Exige fôlego de maratonista, força de um touro e a precisão de um ponta. Paulo Henrique de Oliveira Alves, nosso PH, é a síntese perfeita desse atleta. Ele não joga na lateral, ele domina o corredor, transformando defesa em ataque em uma fração de segundo. Para a torcida vascaína, ele representa a garra, a entrega e a luta que definem a nossa história.</p>
+                <blockquote>
+                    "Em cada pique, uma entrega. Em cada cruzamento, uma esperança. Em cada desarme, a certeza da luta. Paulo Henrique personifica o espírito de um Vasco que nunca desiste."
+                    <footer>— Um torcedor da Colina Histórica</footer>
+                </blockquote>
+            </section>
+
+            <section id="carreira">
+                <h2>Uma Trajetória de Luta e Conquista</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>O Início e a Luta no Sul</h3>
+                        <span class="periodo">Até 2019</span>
+                        <p>Nascido em Pariquera-Açu (SP), foi no sul do Brasil que Paulo Henrique forjou seu caráter. Com passagens por clubes como Paraná, Iraty e Tubarão, aprendeu desde cedo o valor da perseverança. Cada jogo era uma batalha, cada temporada um degrau na longa escada rumo ao futebol de elite.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>A Afirmação no Juventude</h3>
+                        <span class="periodo">2020 – 2021</span>
+                        <p>Foi no Juventude que o Brasil conheceu a força de PH. Com atuações consistentes e uma impressionante capacidade física, tornou-se peça-chave do time de Caxias do Sul, atraindo os olhares dos grandes clubes do país. Sua velocidade e qualidade no apoio ao ataque o colocaram no mapa do futebol nacional.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Atlético Mineiro: O Salto e os Títulos</h3>
+                        <span class="periodo">2021 – 2023</span>
+                        <p>A transferência para o Atlético Mineiro foi a prova de sua ascensão. Em um elenco recheado de estrelas, fez parte do grupo histórico que conquistou o Campeonato Brasileiro e a Copa do Brasil em 2021. Uma experiência que lhe deu bagagem, maturidade e o sabor das grandes glórias.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Vasco da Gama: O Dono da Lateral</h3>
+                        <span class="periodo">2023 – Presente</span>
+                        <p>Chegar ao Vasco foi mais do que uma transferência; foi um encontro de destinos. Com a Cruz de Malta no peito, Paulo Henrique encontrou seu lugar. Conquistou a torcida com sua entrega incansável e se firmou como titular absoluto. Hoje, é um dos pilares da equipe, um verdadeiro guerreiro que honra a camisa pesada do Gigante da Colina.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="titulos">
+                <h2>Galeria de Conquistas</h2>
+                <ul class="trophy-grid">
+                    <li>
+                        <span class="trophy-title">Campeonato Brasileiro</span>
+                        <span class="trophy-year">2021</span>
+                    </li>
+                    <li>
+                        <span class="trophy-title">Copa do Brasil</span>
+                        <span class="trophy-year">2021</span>
+                    </li>
+                    <li>
+                        <span class="trophy-title">Campeonato Mineiro</span>
+                        <span class="trophy-year">2022, 2023</span>
+                    </li>
+                     <li>
+                        <span class="trophy-title">Supercopa do Brasil</span>
+                        <span class="trophy-year">2022</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="pessoal">
+                <h2>Além das Quatro Linhas: A Garra de um Guerreiro</h2>
+                <p>Fora de campo, Paulo Henrique mantém a mesma postura focada e determinada. É descrito como um profissional exemplar, trabalhador e um ótimo companheiro de equipe. Sua jornada, de clubes de menor expressão até um dos gigantes do Brasil, é uma lição de resiliência.</p>
+                <p>Essa mentalidade se traduz em campo. Ele não tem bola perdida. Cada carrinho, cada corrida para fechar o espaço, cada avanço para o ataque é feito com a máxima intensidade. Para nós, fãs, Paulo Henrique não é apenas um lateral direito. Ele é a garra, a raça e a vontade que queremos ver sempre em nosso time. Ele é Vasco.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Página criada pela torcida, celebrando a trajetória de garra e velocidade de Paulo Henrique.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Fã Clube não-oficial. Última atualização: Outubro de 2023.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
